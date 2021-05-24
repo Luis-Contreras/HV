@@ -1,16 +1,13 @@
 import React from "react";
+import Paragraph from "../components/Paragraph";
+import TitleContent from "../components/TitleContent";
+import { profileData } from "../data";
 
 const Profile = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}>
-      <h1>hola</h1>
+    <div style={{ marginBottom: "90px" }}>
+      <TitleContent label="PERFIL" icon="medapps" />
+      <Paragraph label={profileData} />
     </div>
   );
 };
